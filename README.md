@@ -1,37 +1,44 @@
-# blog-dashboard-react
-Blog dashboard built with React, TypeScript, TanStack Query, Tailwind CSS and shadcn/ui.
-# Blog Dashboard (CA Monk Frontend Interview)
+Blog Dashboard (CA Monk Frontend Interview)
 
-A simple blog dashboard built with **Vite + React + TypeScript**, using:
-- **TanStack Query** for data fetching/caching
-- **Tailwind CSS** for styling
-- **shadcn/ui** for UI components
-- **JSON Server** as the backend API
+A blog dashboard application built using Vite + React + TypeScript as part of the CA Monk Frontend Interview Assignment.
 
-## Features
-- List all blogs (`GET /blogs`)
-- View blog by id (`GET /blogs/:id`)
-- Create a new blog (`POST /blogs`) + auto refresh list (query invalidation)
-- Loading + error states
-- Responsive two-panel layout (list + detail)
+FEATURES
+- Fetch and display all blogs (GET /blogs)
+- View a single blog by ID (GET /blogs/:id)
+- Create a new blog (POST /blogs)
+- Automatic refresh after blog creation using TanStack Query
+- Loading and error states
+- Responsive two-panel layout (Blog List + Blog Detail)
 
-## Tech Stack
+TECH STACK
 - React + TypeScript (Vite)
 - TanStack Query
 - Tailwind CSS
 - shadcn/ui
 - JSON Server
 
-## Getting Started
+GETTING STARTED
 
-### 1) Install dependencies
-```bash
+1) Install dependencies
 npm install
 
-### 2)Start the backend (JSON Server)
+2) Start backend and frontend
 npm run server
-Backend runs at: http://localhost:3001
-
-### 3)Start the frontend
 npm run dev
-App runs at: http://localhost:5173
+
+Backend runs at: http://localhost:3001
+Frontend runs at: http://localhost:5173
+
+API ENDPOINTS
+- GET /blogs       -> Get all blogs
+- GET /blogs/:id   -> Get blog by ID
+- POST /blogs      -> Create a new blog
+
+NOTES
+- Blog data is stored in db.json using JSON Server.
+- Categories are entered as comma-separated values.
+- UI follows the provided reference design (not pixel-perfect as allowed).
+
+AUTHOR
+Nehal Shaikh
+CA Monk Frontend Interview Assignment
