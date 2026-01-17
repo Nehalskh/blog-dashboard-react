@@ -27,3 +27,11 @@ A simple blog dashboard built with **Vite + React + TypeScript**, using:
 ### 1) Install dependencies
 ```bash
 npm install
+
+### 2)Start the backend (JSON Server)
+npm run server
+Backend runs at: http://localhost:3001
+
+### 3)Start the frontend
+npm run dev
+App runs at: http://localhost:5173
